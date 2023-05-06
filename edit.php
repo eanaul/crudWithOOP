@@ -36,6 +36,12 @@ foreach($db->edit($_GET['nis']) as $d){
         </td>
     </tr>
     <tr>
+        <td>Gambar</td>
+        <td>
+            <input type="file" name="gambar" value="<?php echo $d['gambar'] ?>">
+        </td>
+    </tr>
+    <tr>
         <td></td>
         <td><input type="submit" value="Simpan"></td>
     </tr>

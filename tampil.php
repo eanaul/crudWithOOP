@@ -11,6 +11,7 @@ $db = new database();
 <a href="input.php">Input Data</a>
 <table border="1">
     <tr>
+        <th>Gambar</th>
         <th>NIS</th>
         <th>Nama</th>
         <th>Rayon</th>
@@ -21,6 +22,7 @@ $db = new database();
 <?php foreach($db->tampil_data() as $x){ ?>
 
     <tr>
+        <td><img src="gambar/<?php echo $x['gambar'];?>" width="250"></td>
         <td><?php echo $x['nis']; ?></td>
         <td><?php echo $x['nama']; ?></td>
         <td><?php echo $x['rayon']; ?></td>

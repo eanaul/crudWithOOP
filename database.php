@@ -20,8 +20,8 @@ class database{
         return $hasil;
     }
 
-    function input($nis, $nama, $rayon, $rombel){
-        mysqli_query($this->koneksi, "INSERT INTO dream VALUES('$nis', '$nama', '$rayon', '$rombel')");
+    function input($nis, $nama, $rayon, $rombel, $gambar){
+        mysqli_query($this->koneksi, "INSERT INTO dream VALUES('$nis', '$nama', '$rayon', '$rombel', '$gambar')");
     }
 
     function hapus($nis){
@@ -36,8 +36,8 @@ class database{
         return $hasil;
     }
 
-    function update($nis, $nama, $rayon, $rombel){
-        mysqli_query($this->koneksi, "UPDATE `dream` SET `nis`='$nis',`nama`='$nama',`rayon`='$rayon',`rombel`='$rombel' WHERE nis='$nis'");
+    function update($nis, $nama, $rayon, $rombel, $gambar){
+        mysqli_query($this->koneksi, "UPDATE `dream` SET `nis`='$nis',`nama`='$nama',`rayon`='$rayon',`rombel`='$rombel', `gambar`='$gambar' WHERE nis='$nis'");
     }
 
 }

@@ -19,6 +19,10 @@
 		<td>Rombel</td>
 		<td><input type="text" name="rombel"></td>
 	</tr>
+	<tr>
+		<td>Gambar</td>
+		<td><input type="file" name="gambar"></td>
+	</tr>
     <tr>
 		<td></td>
 		<td><input type="submit" value="Simpan"></td>
